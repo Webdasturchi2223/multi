@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+:root {
+  --color-1: #186cb8;
+  --color-2: #2a9a9f;
+  --color-3: #f1b211;
+  --color-4: #e83611;
+  --color-5: #f9002f;
+}
+
+:focus{
+  outline: 5px dotted red;
+  outline-offset: 5px;
+}
+
+body{
+  font-family: 'Poppins', 'Roboto', 'Exo', sans-serif;
+  min-height: 100vh;
+}
+
+.container{
+  width: 100%;
+  max-width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* wrapper start */
+
+.wrapper {
+  background: #000;
+  line-height: 1;
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 16px);
+}
+
+h1 {
+  font-size: 15vw;
+  font-weight: 900;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  text-decoration: none;
+  margin: auto;
+  background: linear-gradient(219deg,
+      var(--color-1) 19%,
+      transparent 19%, transparent 20%,
+      var(--color-2) 20%, var(--color-2) 39%,
+      transparent 39%, transparent 40%,
+      var(--color-3) 40%, var(--color-3) 59%,
+      transparent 59%, transparent 60%,
+      var(--color-4) 60%, var(--color-4) 79%,
+      transparent 79%, transparent 80%,
+      var(--color-5) 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  user-select: none;
+}
+
+.wrapper__container {
+  padding: 1.5rem;
+  text-align: center;
+  background: radial-gradient(circle at 1.4% 1.4%, var(--color-1) .8%, transparent .8%),
+    radial-gradient(circle at 5.5% 3%, var(--color-2) .45%, transparent .45%),
+    radial-gradient(circle at 2.5% 3.5%, var(--color-3) .5%, transparent .5%),
+    radial-gradient(circle at 4.5% 1.2%, var(--color-4) .25%, transparent .25%),
+
+    radial-gradient(circle at 98% 98%, var(--color-1) .8%, transparent .8%),
+    radial-gradient(circle at 95% 95%, var(--color-2) .45%, transparent .45%),
+    radial-gradient(circle at 94.5% 97.5%, var(--color-3) .5%, transparent .5%),
+    radial-gradient(circle at 98.5% 95.5%, var(--color-4) .25%, transparent .25%);
+
+
+}
+
+/* wrapper end */
+
+
+
+/* footer start */
+
+.footer{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #111;
+  text-align: center;
+}
+
+.footer__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__title{
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+}
+
+.footer__content{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.footer__content:hover{
+  opacity: 0.8;
+}
+
+.footer__content:active{
+  opacity: 0.6;
+}
+
+/* footer end */
+
+
+
+/* @media start */
+
+@media screen and (min-width: 768px) {
+
+  .wrapper {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 6.5rem;
+  }
+}
+
+/* @media end */
